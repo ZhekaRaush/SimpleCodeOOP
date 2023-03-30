@@ -22,6 +22,12 @@ public:
     /// Метод вывода экземпляр класса Human в консоль.
     /// </summary>
     void Print() {
+
+#pragma region Проверки
+
+        /// <summary>
+        /// Проверка заполненно ли поле имя.
+        /// </summary>
         if (name != "")
         {
             cout << "Имя: " << name << endl;
@@ -31,6 +37,9 @@ public:
             return;
         }
 
+        /// <summary>
+        /// Проверка заполненно ли поле фамилия.
+        /// </summary>
         if (surname != "")
         {
             cout << "Фамилия: " << surname << endl;
@@ -40,6 +49,9 @@ public:
             return;
         }
 
+        /// <summary>
+        /// Проверка заполненно ли поле возрост.
+        /// </summary>
         if (age != NULL)
         {
             cout << "Возрост: " << age << endl;
@@ -49,6 +61,9 @@ public:
             return;
         }
 
+        /// <summary>
+        /// Проверка заполненно ли поле вес.
+        /// </summary>
         if (weight != NULL)
         {
             cout << "Вес: " << weight << endl << endl;
@@ -57,6 +72,8 @@ public:
         {
             return;
         }
+
+#pragma endregion
     }
 };
 
