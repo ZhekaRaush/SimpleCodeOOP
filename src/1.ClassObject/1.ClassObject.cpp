@@ -7,15 +7,20 @@ using namespace std;
 * Что таое объект класса.
 */
 
+/// <summary>
+/// Структура класса Human.
+/// </summary>
 class Human {
 public:
     string name;
     string surname;
     int age;
     int weight;
-
 };
 
+/// <summary>
+/// Структура класса Point.
+/// </summary>
 class Point {
 public:
     int x;
